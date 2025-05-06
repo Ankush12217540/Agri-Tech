@@ -9,6 +9,7 @@ class Region extends Model
     protected $fillable = ['name'];
 
     public function farmers()
+    
     {
         return $this->hasMany(Farmer::class);
     }
